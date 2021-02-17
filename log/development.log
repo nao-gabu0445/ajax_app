@@ -1149,3 +1149,1444 @@ Entrypoint application = js/application-b30ae7911dbc80630329.js js/application-b
 Completed 200 OK in 4927ms (Views: 4909.9ms | ActiveRecord: 4.6ms | Allocations: 1471097)
 
 
+Started GET "/" for ::1 at 2021-02-17 11:50:17 +0900
+  [1m[35m (16.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1903)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/ogawaranaoto/Desktop/ajax_app/public/packs
+[Webpacker] Hash: 489cf6598fc4fd12ac5c
+Version: webpack 4.46.0
+Time: 868ms
+Built at: 2021/02/17 11:50:21
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0da6f0c5d3916842285b.js    125 KiB  application  [emitted] [immutable]  application
+js/application-0da6f0c5d3916842285b.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0da6f0c5d3916842285b.js js/application-0da6f0c5d3916842285b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/checked.js] 401 bytes {application} [built]
+[./app/javascript/memo.js] 0 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3733ms (Views: 3718.0ms | ActiveRecord: 5.1ms | Allocations: 1469922)
+
+
+Started POST "/posts" for ::1 at 2021-02-17 11:50:56 +0900
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"M0aZhf5H3XIw/yncad9C1LgLxwa3uaYNZWXvXqHW67yu6oLTUBIbJ5/frfJWBiZHuWMEEBsE1i8V35+UXsARDw==", "content"=>"こんにちは、", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (3.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('こんにちは、', '2021-02-17 02:50:56.232311', '2021-02-17 02:50:56.232311')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 16ms (ActiveRecord: 6.0ms | Allocations: 6635)
+
+
+Started GET "/" for ::1 at 2021-02-17 11:50:56 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1398)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.3ms | Allocations: 7167)
+
+
+Started POST "/posts" for ::1 at 2021-02-17 11:51:26 +0900
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"WbMv2hv2ksqHaa9KEY9EvErzUXgRRJCsNVyviJJwlfPS1lAml09eSTsQBNY8p/yJM4I/aqGQ76uuuuTdeRLtLw==", "content"=>"hhh", "commit"=>"投稿する"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[36mPost Create (1.0ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('hhh', '2021-02-17 02:51:26.602073', '2021-02-17 02:51:26.602073')[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 200 OK in 5ms (ActiveRecord: 1.4ms | Allocations: 2896)
+
+
+Started GET "/" for ::1 at 2021-02-17 11:51:26 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1410)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 7169)
+
+
+Started GET "/" for ::1 at 2021-02-17 12:04:42 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1406)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/ogawaranaoto/Desktop/ajax_app/public/packs
+[Webpacker] Hash: 34da9ec9ad6e9e1d4d8a
+Version: webpack 4.46.0
+Time: 830ms
+Built at: 2021/02/17 12:04:45
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-98b521c3a05814ae9c12.js    125 KiB  application  [emitted] [immutable]  application
+js/application-98b521c3a05814ae9c12.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-98b521c3a05814ae9c12.js js/application-98b521c3a05814ae9c12.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/checked.js] 672 bytes {application} [built]
+[./app/javascript/memo.js] 0 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 2643ms (Views: 2642.4ms | ActiveRecord: 0.3ms | Allocations: 11400)
+
+
+Started GET "/posts/2" for ::1 at 2021-02-17 12:04:47 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1062)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a1c5e98>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:04:48 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1137)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a977358>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:04:49 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1127)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec35b120c8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:04:49 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1124)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30be6aa8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:04:49 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1127)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cf22068>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/" for ::1 at 2021-02-17 12:09:45 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1429)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/ogawaranaoto/Desktop/ajax_app/public/packs
+[Webpacker] Hash: 6167f19826214a62a473
+Version: webpack 4.46.0
+Time: 846ms
+Built at: 2021/02/17 12:09:47
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6e113a557d98d4416237.js    125 KiB  application  [emitted] [immutable]  application
+js/application-6e113a557d98d4416237.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6e113a557d98d4416237.js js/application-6e113a557d98d4416237.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/checked.js] 658 bytes {application} [built]
+[./app/javascript/memo.js] 0 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 2490ms (Views: 2488.6ms | ActiveRecord: 0.4ms | Allocations: 8495)
+
+
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:53 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec318385e0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:53 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1115)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a1569d0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:53 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d7f2238>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:53 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3aa8eed0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:53 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2ce7b358>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:53 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d688730>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:54 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d69aea8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:54 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a11e530>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:54 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d7c0940>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:54 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3aace210>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:56 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30c6cbf8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:57 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30fb51e8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:57 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec35c19688>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:57 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a1ef9c8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:57 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3aa3e610>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:57 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30c172e8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:57 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cfa19d0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:57 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a086500>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:09:57 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d7f92b8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:08 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec310f7970>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:08 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cf0b1b0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:08 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec31833d10>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:08 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a21d9e0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:08 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec35a0b2b0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:08 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2ceb3b18>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:08 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec31818cb8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:09 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a26e2f0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:09 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3112f988>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:09 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30f14c70>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:09 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a0bdbb8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:09 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a936858>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:09 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30cd5298>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:09 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3986fc40>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:09 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a24cdf8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:10 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec31285c38>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:10 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3980c320>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:10 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3130dea8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:10 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec310a7b50>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:10:10 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec31354740>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:01 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec35b5a3f0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d5d32b8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec31194fb8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a937eb0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec312ff880>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3281d0f0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30f969f0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30d65348>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3109f888>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a90def8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:02 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec31316940>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec32876600>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cfd0f28>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30ec75b0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cd438f0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3aa57e08>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d7d3068>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d74bdc0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/" for ::1 at 2021-02-17 12:11:03 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2205)
+[Webpacker] Compiling...
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec35c21fb8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:03 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec35b93150>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:04 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cef9f00>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:04 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30b7fbc8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:04 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec310679d8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:04 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a9a42b8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:04 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a29fc88>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:04 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d7698c0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:04 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3283db48>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:04 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec35ba2a60>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:05 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cf43fb0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:05 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30d5edb8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:05 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cd12728>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:05 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d37f3b8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:05 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a93f598>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:05 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a27e9c0>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:05 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3a17ee08>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:05 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d733e50>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:05 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d6a3b70>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:06 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1112)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cfc8170>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+[Webpacker] Compiled all packs in /Users/ogawaranaoto/Desktop/ajax_app/public/packs
+[Webpacker] Hash: 6e7071ad514ba5704b68
+Version: webpack 4.46.0
+Time: 820ms
+Built at: 2021/02/17 12:11:06
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-1210dbb2ebd8609c1634.js    125 KiB  application  [emitted] [immutable]  application
+js/application-1210dbb2ebd8609c1634.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-1210dbb2ebd8609c1634.js js/application-1210dbb2ebd8609c1634.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/checked.js] 920 bytes {application} [built]
+[./app/javascript/memo.js] 0 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 2415ms (Views: 2414.1ms | ActiveRecord: 0.3ms | Allocations: 3202658)
+
+
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:06 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:06 +0900
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2d5c3a70>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1114)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec3aac7208>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:07 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1116)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec30c6d6e8>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:11:10 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1116)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fec2cdaa208>
+Did you mean?  try):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/" for ::1 at 2021-02-17 12:16:55 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 37.1ms | Allocations: 5215)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1238ms (Views: 1224.1ms | ActiveRecord: 6.3ms | Allocations: 1474326)
+
+
+Started GET "/posts/1" for ::1 at 2021-02-17 12:16:59 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Started GET "/posts/2" for ::1 at 2021-02-17 12:17:04 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+Started GET "/posts/1" for ::1 at 2021-02-17 12:17:19 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Started GET "/posts/1" for ::1 at 2021-02-17 12:17:20 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Started GET "/posts/2" for ::1 at 2021-02-17 12:17:26 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (4.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:13:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17:in `checked'
+  [1m[36mPost Update (4.5ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2021-02-17 03:20:22.802040' WHERE `posts`.`id` = 2[0m
+  ↳ app/controllers/posts_controller.rb:17:in `checked'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:17:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:20:in `checked'
+Completed 200 OK in 176018ms (Views: 0.9ms | ActiveRecord: 10.6ms | Allocations: 17890)
+
+
+Started GET "/posts/2" for ::1 at 2021-02-17 12:20:22 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 15252ms (ActiveRecord: 0.0ms | Allocations: 8508)
+
+
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Completed 500 Internal Server Error in 213981ms (ActiveRecord: 0.0ms | Allocations: 61268)
+
+
+Completed 500 Internal Server Error in 198321ms (ActiveRecord: 0.0ms | Allocations: 50503)
+
+
+Completed 500 Internal Server Error in 219028ms (ActiveRecord: 0.0ms | Allocations: 87204)
+
+
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Completed 500 Internal Server Error in 198053ms (ActiveRecord: 0.0ms | Allocations: 39723)
+
+
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+  
+Errno::EIO (Input/output error @ io_writev - <STDOUT>):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/" for ::1 at 2021-02-17 12:20:52 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 5189)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1167ms (Views: 1151.0ms | ActiveRecord: 6.2ms | Allocations: 1471860)
+
+
+Started GET "/posts/1" for ::1 at 2021-02-17 12:20:55 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Started GET "/posts/2" for ::1 at 2021-02-17 12:20:57 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+Started GET "/" for ::1 at 2021-02-17 12:21:04 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1416)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 7225)
+
+
+Started GET "/posts/2" for ::1 at 2021-02-17 12:21:04 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+Started GET "/" for ::1 at 2021-02-17 12:21:05 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1409)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.3ms | Allocations: 7211)
+
+
+Started GET "/posts/1" for ::1 at 2021-02-17 12:21:06 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+Started GET "/posts/2" for ::1 at 2021-02-17 12:21:17 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 175143ms (ActiveRecord: 0.0ms | Allocations: 22043)
+
+
+Completed 500 Internal Server Error in 163853ms (ActiveRecord: 0.0ms | Allocations: 10630)
+
+
+Completed 500 Internal Server Error in 177164ms (ActiveRecord: 0.0ms | Allocations: 42478)
+
+
+Completed 500 Internal Server Error in 183931ms (ActiveRecord: 0.0ms | Allocations: 61846)
+
+
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:13:in `checked'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2021-02-17 03:24:01.271055' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:17:in `checked'
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:17:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+  ↳ app/controllers/posts_controller.rb:20:in `checked'
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Completed 200 OK in 185963ms (Views: 0.3ms | ActiveRecord: 7.7ms | Allocations: 276222)
+
+
+  
+Errno::EIO (Input/output error @ io_write - <STDOUT>):
+  
+app/controllers/posts_controller.rb:12:in `checked'
+Started GET "/posts/1" for ::1 at 2021-02-17 12:24:01 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (1.1ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2021-02-17 03:24:01.917091' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 5.8ms | Allocations: 12333)
+
+
+Started GET "/" for ::1 at 2021-02-17 12:24:14 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 5192)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/ogawaranaoto/Desktop/ajax_app/public/packs
+[Webpacker] Hash: 16988a08139b6e47787f
+Version: webpack 4.46.0
+Time: 916ms
+Built at: 2021/02/17 12:24:17
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-af2d14e82fa2a4678b2a.js    126 KiB  application  [emitted] [immutable]  application
+js/application-af2d14e82fa2a4678b2a.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-af2d14e82fa2a4678b2a.js js/application-af2d14e82fa2a4678b2a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/checked.js] 1.86 KiB {application} [built]
+[./app/javascript/memo.js] 0 bytes {application} [built]
+[./app/javascript/packs/application.js] 794 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3802ms (Views: 3788.5ms | ActiveRecord: 5.3ms | Allocations: 1478400)
+
+
+Started GET "/posts/1" for ::1 at 2021-02-17 12:24:23 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2021-02-17 03:24:23.982663' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 2.0ms | Allocations: 4791)
+
+
+Started GET "/posts/1" for ::1 at 2021-02-17 12:24:24 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2021-02-17 03:24:24.692514' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 41ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 4156)
+
+
+Started GET "/posts/2" for ::1 at 2021-02-17 12:24:25 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2021-02-17 03:24:25.508739' WHERE `posts`.`id` = 2[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 4160)
+
+
+Started GET "/posts/2" for ::1 at 2021-02-17 12:24:26 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2021-02-17 03:24:26.187667' WHERE `posts`.`id` = 2[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 4160)
+
+
+Started GET "/posts/1" for ::1 at 2021-02-17 12:24:26 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = TRUE, `posts`.`updated_at` = '2021-02-17 03:24:26.740625' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:16:in `checked'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 4148)
+
+
+Started GET "/posts/2" for ::1 at 2021-02-17 12:24:27 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.5ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2021-02-17 03:24:27.241482' WHERE `posts`.`id` = 2[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 4146)
+
+
+Started GET "/posts/1" for ::1 at 2021-02-17 12:24:28 +0900
+Processing by PostsController#checked as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:12:in `checked'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`checked` = FALSE, `posts`.`updated_at` = '2021-02-17 03:24:28.019554' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:14:in `checked'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:19:in `checked'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 2.1ms | Allocations: 4144)
+
+
